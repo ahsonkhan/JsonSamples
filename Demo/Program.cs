@@ -10,22 +10,17 @@ namespace Demo
 {
     class Program
     {
-        private static readonly byte[] s_nameUtf8 = Encoding.UTF8.GetBytes("name");
-        private static readonly byte[] s_universityOfUtf8 = Encoding.UTF8.GetBytes("University of");
-
-        public static async Task Main(string[] args)
+        public static (int count, int total) CountUniversityOf_Demo(ReadOnlySpan<byte> dataUtf8)
         {
-            // The JSON data used for the samples was borrowed from https://github.com/Hipo/university-domains-list
-            // under the MIT License (MIT).
+            int count = 0;
+            int total = 0;
 
-            string outputMessage = SyncFileExample("world_universities_and_domains.json");
-            Console.WriteLine("Reading JSON from file, sync: " + outputMessage);
+            // Create reader
+            // Reader loop
+            // Increment total universities on start object
+            // Check if property name is "name" and value starts with "University of", increment counter
 
-            outputMessage = await AsyncWebExample(@"http://universities.hipolabs.com/search?", worldWide: true);
-            Console.WriteLine("Reading JSON from web, async: " + outputMessage);
-
-            outputMessage = await AsyncWebExample(@"http://universities.hipolabs.com/search?country=United%20States");
-            Console.WriteLine("Reading JSON from web, async: " + outputMessage);
+            return (count, total);
         }
 
 /*
@@ -50,6 +45,25 @@ namespace Demo
     }
 ]
 */
+
+        private static readonly byte[] s_nameUtf8 = Encoding.UTF8.GetBytes("name");
+        private static readonly byte[] s_universityOfUtf8 = Encoding.UTF8.GetBytes("University of");
+
+        public static async Task Main(string[] args)
+        {
+            // The JSON data used for the samples was borrowed from https://github.com/Hipo/university-domains-list
+            // under the MIT License (MIT).
+
+            string outputMessage = SyncFileExample("world_universities_and_domains.json");
+            Console.WriteLine("Reading JSON from file, sync: " + outputMessage);
+
+            //outputMessage = await AsyncWebExample(@"http://universities.hipolabs.com/search?", worldWide: true);
+            //Console.WriteLine("Reading JSON from web, async: " + outputMessage);
+
+            //outputMessage = await AsyncWebExample(@"http://universities.hipolabs.com/search?country=United%20States");
+            //Console.WriteLine("Reading JSON from web, async: " + outputMessage);
+        }
+
         private static string SyncFileExample(string fileName)
         {
             // Follow the async web example if you want to read asynchronously from a FileStream instead.
