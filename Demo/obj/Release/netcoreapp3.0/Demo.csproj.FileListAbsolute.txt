@@ -1,0 +1,12 @@
+E:\GitHub\JsonSamples\Demo\bin\Release\netcoreapp3.0\Demo.exe
+E:\GitHub\JsonSamples\Demo\bin\Release\netcoreapp3.0\Demo.deps.json
+E:\GitHub\JsonSamples\Demo\bin\Release\netcoreapp3.0\Demo.runtimeconfig.json
+E:\GitHub\JsonSamples\Demo\bin\Release\netcoreapp3.0\Demo.runtimeconfig.dev.json
+E:\GitHub\JsonSamples\Demo\bin\Release\netcoreapp3.0\Demo.dll
+E:\GitHub\JsonSamples\Demo\bin\Release\netcoreapp3.0\Demo.pdb
+E:\GitHub\JsonSamples\Demo\obj\Release\netcoreapp3.0\Demo.csprojAssemblyReference.cache
+E:\GitHub\JsonSamples\Demo\obj\Release\netcoreapp3.0\Demo.csproj.CoreCompileInputs.cache
+E:\GitHub\JsonSamples\Demo\obj\Release\netcoreapp3.0\Demo.AssemblyInfoInputs.cache
+E:\GitHub\JsonSamples\Demo\obj\Release\netcoreapp3.0\Demo.AssemblyInfo.cs
+E:\GitHub\JsonSamples\Demo\obj\Release\netcoreapp3.0\Demo.dll
+E:\GitHub\JsonSamples\Demo\obj\Release\netcoreapp3.0\Demo.pdb
